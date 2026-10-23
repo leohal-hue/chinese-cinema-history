@@ -1,0 +1,29 @@
+name: 资料纠错或补充
+description: 提供具体条目、建议内容与来源依据
+title: "[资料核对] "
+body:
+  - type: input
+    id: record
+    attributes:
+      label: 条目编号或链接
+      description: 如 film-upper-0002，也可以填写片名与原表位置。
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: 当前内容与建议内容
+      description: 请注明需要修改的字段或关系。存在不同说法时可以并列说明。
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 来源依据
+      description: 请写明书名、作者、版本、页码，或可访问的网页链接和相关原文。没有依据时请明确注明仅为线索。
+    validations:
+      required: true
+  - type: input
+    id: contributor
+    attributes:
+      label: 希望显示的贡献者署名（可选）
