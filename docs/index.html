@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="中国电影史影片、影人与电影公司资料检索。保留原文与来源，逐项核对，持续补充。">
+  <title>中国电影史资料库 · 起步版</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="data.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="masthead"><a href="#" class="brand">中国电影史资料库</a><span>资料整理中的开放档案</span><a href="https://github.com/leohal-hue/chinese-cinema-history" target="_blank" rel="noopener">GitHub 协作 ↗</a><a href="catalog.json" download class="download">下载当前数据 ↗</a></header>
+  <main>
+    <section class="intro"><div class="eyebrow">CHINESE CINEMA · PEOPLE / FILMS / COMPANIES</div><h1>从一部影片，<br>走进一段电影史。</h1><p>查找影片，追溯影人与公司的联系。每条记录保留原文与来源，让补充、核对和讨论有据可循。</p><div id="stats" class="stats"></div></section>
+    <aside class="notice"><strong>起步版 · 资料待核对</strong><span>当前范围为三份《中国无声电影剧本》影片信息表。人物与机构均为名称候选；关系按原表保守提取，演员暂未拆分。检索结果不代表完整片目。</span></aside>
+    <section class="workspace" aria-label="资料检索">
+      <div class="catalog"><div class="catalog-head"><div class="tabs" role="group" aria-label="资料类别"><button class="active" data-kind="films" aria-pressed="true">影片</button><button data-kind="people" aria-pressed="false">影人候选</button><button data-kind="companies" aria-pressed="false">公司候选</button><button data-kind="review_queue" aria-pressed="false">核对清单</button></div>
+      <label class="search-label" for="search">检索资料</label><input id="search" type="search" placeholder="输入片名、人名或公司名称…" autocomplete="off">
+      <div class="filters"><label>年份<select id="year"><option value="">全部年份</option><option value="unknown">年份未填</option></select></label><label>核对状态<select id="status"><option value="">全部状态</option><option>待核对</option><option>已核对</option><option>有争议</option></select></label><button id="reset" class="quiet">重置</button></div><p id="result-count" aria-live="polite"></p></div>
+      <div id="results" class="results"></div><button id="more" class="more" hidden>继续显示</button></div>
+      <article id="detail" class="detail" aria-label="条目详情" tabindex="-1"></article>
+    </section>
+    <footer><span>资料不齐处保留空白，存在疑问处留下记录。</span><a href="guide.html">如何核对与协作 ↗</a></footer>
+  </main>
+</body>
+</html>
