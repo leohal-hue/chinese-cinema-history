@@ -15,8 +15,8 @@
 
 | 文件 | 用途 |
 | --- | --- |
-| `sources/*.xlsx` | 原表副本，保留原样；默认本机保存，公开上传需另行确认 |
-| `sources/original_records.json` | 原始文字与行号快照；默认本机保存，公开上传需另行确认 |
+| `sources/*.xlsx` | 原表副本，保留原样；已获用户授权公开 |
+| `sources/original_records.json` | 原始文字与行号快照；已获用户授权公开 |
 | `data/films.csv` | 正式维护的影片条目，一条原始记录暂对应一个条目 |
 | `REVIEW_NOTES.md` | 后续发现的具体疑点汇总，供用户确认 |
 | `data/people.csv` | 人物名称候选，尚未完成身份消歧 |

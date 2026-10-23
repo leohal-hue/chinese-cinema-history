@@ -8,7 +8,7 @@
 - 网站：https://leohal-hue.github.io/chinese-cinema-history/
 - 仓库：https://github.com/leohal-hue/chinese-cinema-history
 - 网页、正式资料表与维护脚本已提交；网站已公开响应 HTTP 200。
-- 原始 Excel 与原始记录快照暂保留本机，待用户单独确认是否公开。
+- 用户于 2026-10-23 明确允许将三份原始 Excel 与原始记录快照上传至本独立公开仓库。
 
 ## 首次发布
 
